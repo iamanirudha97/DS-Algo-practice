@@ -2,7 +2,7 @@ public class Ceiling {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
 //        int[] arr = {18, 16, 14, 9, 5, 3, 2};
-        int target = 19;
+        int target = 14;
         int ans = searchBinary(arr, target);
         System.out.println(ans);
     }
