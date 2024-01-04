@@ -1,10 +1,10 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class SelectionSort {
+public class SelectAndInsertSort {
     public static void main(String[] args) {
-        int[] arr = {2, -123, 0, 23,1444,542};
-        selectionSort(arr);
+//        int[] arr = {2, -123, 0, 23,1444,542};
+        int[] arr = {5,3,4,1,2};
+        insertionSort(arr);
         System.out.println(Arrays.toString(arr));
 
     }
@@ -14,7 +14,16 @@ public class SelectionSort {
             int last = arr.length - i - 1;
             int max = getMaxIndex(arr, 0, last);
             swap(arr, max, last);
+        }
+    }
 
+    static void insertionSort(int[] arr){
+        for (int i = 0; i < arr.length - 1; i++){
+            for(int j = i + 1; j > 0; j--){
+                if(arr[j] < arr[j-1]){
+                    swap(arr, j, j-1);
+                } else break;
+            }
         }
     }
 
