@@ -22,7 +22,7 @@ public class LinkedListTheory {
         head = node;
 
         if (tail == null){
-           tail = head;
+            tail = head;
         } size++;
     }
 
